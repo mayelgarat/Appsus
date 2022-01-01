@@ -5,7 +5,6 @@
   display: flex;
   align-items: center;
   width: 70%;
-  /* margin-block-start: 20px; */
   margin: 30px auto;
 }
 
@@ -21,21 +20,18 @@ h1 {
 
 p,
 small {
-    margin-bottom: 15px;
-    text-transform: capitalize;
+  margin-bottom: 15px;
+  text-transform: capitalize;
 }
-
 
 span {
   font-weight: bold;
 }
 
 .details-container {
-
   margin-inline-start: 30px;
 }
 
-.headline{
-    margin-block-end: 10px;
+.headline {
+  margin-block-end: 10px;
 }
-

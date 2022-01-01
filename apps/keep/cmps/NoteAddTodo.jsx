@@ -13,18 +13,10 @@ export class NoteAddTodo extends React.Component {
     handleChange = ({ target }) => {
         const field = target.name;
         const value = target.value;
-        console.log('field:', field);
-        console.log('value:', value);
-
         this.setState((prevState) => ({
             note: { ...prevState.note, [field]: value }
         }))
-        console.log('this.state:', this.state);
     }
-
-    // onAddInput = () => {
-
-    // }
 
     onSaveTodoNote = (ev) => {
         ev.preventDefault()
@@ -53,7 +45,6 @@ export class NoteAddTodo extends React.Component {
                                 onChange={this.handleChange}>
                             </input>
                             <button
-                                // onClick={this.onAddInput}
                                 className="add-todo-btn"
                             >+</button>
                         </div>

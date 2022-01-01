@@ -9,20 +9,13 @@ export class NotePreview extends React.Component {
     };
 
     changeNoteColor = (color) => {
-        console.log("changing color");
-        console.log("color");
-        // let currColor = utilService.getNiceRandomColor()
-        // console.log('currColor:', currColor);
-
         this.props.onChangeBackground(this.props.note.id, utilService.getNiceRandomColor());
-        console.log('this.props.note.id:', this.props.note.id);
     };
 
 
     duplicateNote = () => {
         const { note } = this.props
         this.props.onDuplicateNote(note.id)
-        console.log('copying note')
     }
     togglePinNote = () => {
         const { note } = this.props

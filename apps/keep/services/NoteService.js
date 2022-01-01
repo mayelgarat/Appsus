@@ -62,7 +62,6 @@ function _filterNotesByText(notes, input) {
                 break;
         }
         const res = txt.includes(input)
-        console.log(`${txt} includes ${input}`, res)
         return res
 
     })
@@ -102,9 +101,7 @@ function changeBackground(noteId, color) {
     let noteIdx = notes.findIndex(function (note) {
         return note.id === noteId;
     })
-    console.log('noteIdx:', noteIdx);
     notes[noteIdx].style.backgroundColor = color
-    console.log('notes[noteIdx]:', notes[noteIdx]);
     _saveNotesToStorage(notes)
     return Promise.resolve()
 }
@@ -118,10 +115,8 @@ function _getNoteById(noteId) {
 }
 
 function removeNote(noteId) {
-    console.log('noteId', noteId)
     let notes = _loadNotesFromStorage()
     notes = notes.filter(note => note.id !== noteId)
-    console.log('filtered notes', notes)
     _saveNotesToStorage(notes);
     return Promise.resolve()
 }
@@ -211,9 +206,6 @@ function createVideoNote(videoUrl, title) {
 
 
 function createTodoNote(todo, title) {
-    console.log('todo:', todo);
-    console.log('title:', title);
-
     // const txt = todos.map((todo) => todo.txt)
     const newTodosNote = {
         id: utilService.makeId(),

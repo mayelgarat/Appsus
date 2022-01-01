@@ -15,7 +15,6 @@ export class NoteAddTxt extends React.Component {
         this.setState((prevState) => ({
             note: { ...prevState.note, [field]: value }
         }))
-        console.log('this.state:', this.state);
     }
 
 

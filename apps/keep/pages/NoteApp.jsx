@@ -40,23 +40,10 @@ export class NoteApp extends React.Component {
     };
 
     onChangeBackground = (noteId, color) => {
-        console.log("noteId:", noteId);
-        console.log("color:", color);
         noteService.changeBackground(noteId, color).then(() => {
             this.loadNotes();
         });
     };
-
-    // onAddNote = () => {
-    //     console.log("adding");
-    //     // const addedNote = noteService.createTextNote('I LOVE HUMUS')
-    //     // noteService.addNote(addedNote)
-    //     this.loadNotes();
-    //     // noteService.addNote(note).then(() => {
-    //     //     this.loadNotes()
-    //     //
-    //     // })
-    // };
 
     onShowAddTxtNoteModal = () => {
         this.setState({ addTxtNoteModal: true })
@@ -106,7 +93,6 @@ export class NoteApp extends React.Component {
         let buttonFilterId = ev.target.id;
         let filterByType = buttonFilterId.split("type-")[1];
         if (filterByType === "remove-filter") filterByType = null;
-        console.log("filterByType:", filterByType);
         this.setState({ filterByType }, () => {
             this.loadNotes();
         });
@@ -128,7 +114,6 @@ export class NoteApp extends React.Component {
     }
 
     onDuplicateNote = (noteId) => {
-        console.log('noteId:', noteId);
         noteService.duplicateNote(noteId).then(() => {
             this.loadNotes()
         })
@@ -155,9 +140,7 @@ export class NoteApp extends React.Component {
                 break;
         }
         const mail = { subject: txt, body: JSON.stringify(note.info) };
-        console.log("mail:", mail);
         this.setState({ noteToSent: mail });
-        console.log('noteToSent', this.state.noteToSent);
         // const url = '/#/mail/new-mail/'
         // const params = new URLSearchParams()
         // params.set('subject', mail.subject)
@@ -168,40 +151,9 @@ export class NoteApp extends React.Component {
         // window.location.replace(urlAndParmas)
     };
 
-    // onSentByEmail = (note) => {
-    //     let txt;
-    //     switch (note.type) {
-    //         case "note-txt":
-    //             txt = note.info.txt;
-    //             break;
-    //         case "note-todos":
-    //             txt = note.info.label;
-    //             break;
-    //         case "note-img":
-    //             txt = note.info.title;
-    //             break;
-    //         case "note-video":
-    //             txt = note.info.title;
-    //             break;
-    //         default:
-    //             break;
-    //     }
-    //     const mail = { to: "", subject: txt, body: JSON.stringify(note.info) };
-    //     console.log("mail:", mail);
-    //     // const url = '/#/mail/new-mail/'
-    //     // const params = new URLSearchParams()
-    //     // params.set('subject', mail.subject)
-    //     // params.set('body', mail.body)
-    //     // console.log('subject', mail.subject)
-    //     // const urlAndParmas = url + '?' + params
-    //     // console.log('urlAndParmas', urlAndParmas)
-    //     // window.location.replace(urlAndParmas)
-    // };
     render() {
 
         const { notes, noteToSent } = this.state;
-        // ADD loader cmps
-        // if (!notes) return <Loader />
         if (!notes) return <div>Loading...</div>;
         return (
             <React.Fragment>
@@ -225,15 +177,12 @@ export class NoteApp extends React.Component {
                                 />
                             </div>
                         </div>
-
-                        {/* <button className="create-note-btn">Create New Note +</button> */}
                         <div className="create-notes-btns">
                             Choose Note Type:
                             <button className="create-note-btn" onClick={this.onShowAddTxtNoteModal}>Create text Note</button>
                             <button className="create-note-btn" onClick={this.onShowAddImgNoteModal}>Create image Note</button>
                             <button className="create-note-btn" onClick={this.onShowAddVideoNoteModal}>Create video Note</button>
                             <button className="create-note-btn" onClick={this.onShowAddTodoNoteModal}>Create todo Note</button>
-                            {/* <button className="create-note-btn" onClick={this.onShowAddNoteModal}>Create New todo Note</button> */}
                         </div>
                         {this.state.addTxtNoteModal && <div className="add-notes-container">
                             <div className="note-modal">
