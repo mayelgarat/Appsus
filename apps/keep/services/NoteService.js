@@ -298,6 +298,17 @@ function _createNotes() {
                 style: {
                     backgroundColor: "#d8b5f6"
                 }
+            }, {
+                id: utilService.makeId(),
+                type: "note-video",
+                isPinned: false,
+                info: {
+                    url: "https://www.youtube.com/watch?v=ZuRLOlB4N8U&ab_channel=PetWard",
+                    title: "Watch later"
+                },
+                style: {
+                    backgroundColor: "#a6dcd0"
+                }
             },
             {
                 id: utilService.makeId(),
@@ -326,6 +337,18 @@ function _createNotes() {
                     backgroundColor: "#f2dce8"
                 }
             },
+            {
+                id: utilService.makeId(),
+                type: "note-video",
+                isPinned: false,
+                info: {
+                    url: "https://www.youtube.com/watch?v=0xqkksHov58&ab_channel=PetWard",
+                    title: "Watch later"
+                },
+                style: {
+                    backgroundColor: "#a6dcd0"
+                }
+            },
 
             {
                 id: utilService.makeId(),
@@ -351,6 +374,18 @@ function _createNotes() {
             },
             {
                 id: utilService.makeId(),
+                type: "note-video",
+                isPinned: true,
+                info: {
+                    url: "https://www.youtube.com/watch?v=Ob7vObnFUJc&ab_channel=Beyonc%C3%A9VEVO",
+                    title: "🎵🎶🎵"
+                },
+                style: {
+                    backgroundColor: "#a6dcd0"
+                }
+            },
+            {
+                id: utilService.makeId(),
                 type: "note-txt",
                 isPinned: false,
                 info: {
@@ -369,6 +404,47 @@ function _createNotes() {
                 },
                 style: {
                     backgroundColor: "#d8b5f6"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-video",
+                isPinned: true,
+                info: {
+                    url: "https://www.youtube.com/watch?v=VCjSIex9JEQ&ab_channel=PetWard",
+                    title: "Watch later"
+                },
+                style: {
+                    backgroundColor: "#a6dcd0"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-todos",
+                isPinned: true,
+                info: {
+                    label: "לקנות מצרכים לעוגה",
+                    todos: [
+                        { id: utilService.makeId(), txt: "קמח", doneAt: 187111111 },
+                        { id: utilService.makeId(), txt: "ביצים", doneAt: 187111111 },
+                        { id: utilService.makeId(), txt: "סוכר", doneAt: 187111111 },
+                        { id: utilService.makeId(), txt: "שוקולד", doneAt: 187111111 },
+                    ]
+                },
+                style: {
+                    backgroundColor: "#f8f8b8"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-video",
+                isPinned: false,
+                info: {
+                    url: "https://www.youtube.com/watch?v=q3uXXh1sHcI&ab_channel=BBCEarth",
+                    title: "cute penguins"
+                },
+                style: {
+                    backgroundColor: "#a6dcd0"
                 }
             },
             {
@@ -503,6 +579,22 @@ function _createNotes() {
             },
             {
                 id: utilService.makeId(),
+                type: "note-todos",
+                isPinned: false,
+                info: {
+                    label: "יום שני 03/01/2022",
+                    todos: [
+                        { id: utilService.makeId(), txt: "להזמין טכנאי", doneAt: null },
+                        { id: utilService.makeId(), txt: "לצבוע את הבית", doneAt: null },
+                        { id: utilService.makeId(), txt: "ללכת לדואר", doneAt: 187111111 }
+                    ]
+                },
+                style: {
+                    backgroundColor: "#f8f8b8"
+                }
+            },
+            {
+                id: utilService.makeId(),
                 type: "note-img",
                 isPinned: false,
                 info: {
@@ -541,6 +633,21 @@ function _createNotes() {
             {
                 id: utilService.makeId(),
                 type: "note-todos",
+                isPinned: false,
+                info: {
+                    label: "",
+                    todos: [
+                        { id: utilService.makeId(), txt: "לדבר עם מוקי", doneAt: null },
+
+                    ]
+                },
+                style: {
+                    backgroundColor: "#f8f8b8"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-todos",
                 isPinned: true,
                 info: {
                     label: "checklist for vacation",
@@ -548,6 +655,23 @@ function _createNotes() {
                         { id: utilService.makeId(), txt: "Passport", doneAt: null },
                         { id: utilService.makeId(), txt: "Sun lotion", doneAt: 187111111 },
                         { id: utilService.makeId(), txt: "sunglasses", doneAt: null }
+                    ]
+                },
+                style: {
+                    backgroundColor: "#f8f8b8"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-todos",
+                isPinned: false,
+                info: {
+                    label: "לא לשכוח",
+                    todos: [
+                        { id: utilService.makeId(), txt: "עגבניות", doneAt: 187111111 },
+                        { id: utilService.makeId(), txt: "מלפפון", doneAt: null },
+                        { id: utilService.makeId(), txt: "במבה", doneAt: null },
+                        { id: utilService.makeId(), txt: "זירו", doneAt: 187111111 }
                     ]
                 },
                 style: {
