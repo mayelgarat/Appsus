@@ -30,8 +30,55 @@ h1.headline {
     color: rgb(255, 255, 255);
     margin-inline-start: 34px;
 }
-.main-nav {
+/* .main-nav {
   display: flex;
-  /* justify-content: space-between; */
+  /* justify-content: space-between;
   margin-inline-end: 90px;
+} */
+
+.burger{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+}
+
+.main-nav{
+  display: grid;
+  z-index: 5;
+  grid-template-columns: 50% 50%;
+  position: fixed;
+  height: 220px;
+  width: 220px;
+  justify-content: center;
+  align-items: center;
+  background-color: #d3c1c1a8;
+  color: violet;
+  top: 64px;
+  right: 40px;
+  justify-content: center;
+  box-shadow: 0 0 11px 2px #000000b0;
+}
+
+
+.main-nav div{
+  display: inline;
+  text-align: center;
+
+}
+
+/* .main-nav div a{
+margin-left: 25%;
+} */
+
+
+.main-nav div a button i{
+  font-size: 35px;
+}
+.main-nav div a button{
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  cursor: pointer;
 }

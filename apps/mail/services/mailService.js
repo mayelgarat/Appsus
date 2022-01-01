@@ -18,7 +18,7 @@ const emails = [
     id: utilService.makeId(),
     from: "Alon Dai - Coding Academy",
     subject: "יום מעולה!",
-    body: "היום היום הכי קשה בקורס! לא נהיה זמינים משעה 14:00 עקב ישיבה ",
+    body: "😎 היום הכי קשה בקורס! לא נהיה זמינים משעה 14:00 עקב ישיבה ",
     isRead: false,
     sentAt: Date.now(),
     to: "user@appsus.com",
