@@ -53,19 +53,6 @@ const emails = [
   },
   {
     id: utilService.makeId(),
-    from: "May Elgarat",
-    subject: "Hello!",
-    body: "How is your day going?",
-    isRead: true,
-    sentAt: Date.now(),
-    to: "user@appsus.com",
-    isStar: true,
-    isTrash: false,
-    isDraft: false
-
-  },
-  {
-    id: utilService.makeId(),
     from: "Yaron Biton - Coding Academy",
     subject: "YESSS!",
     body: "איזה אפליקציה מרגשת",
@@ -91,7 +78,7 @@ const emails = [
   },
   {
     id: utilService.makeId(),
-    from: "May Elgarat",
+    from: "Lee Segal",
     subject: "Hi how are you?",
     body: "Can you please check my latest update in git Hub",
     isRead: false,
@@ -253,8 +240,6 @@ const emails = [
     isStar: false,
     isTrash: false,
     isDraft: false,
-
-
   },
   {
     id: utilService.makeId(),
