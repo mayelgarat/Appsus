@@ -210,7 +210,7 @@ function createTodoNote(todo, title) {
     const newTodosNote = {
         id: utilService.makeId(),
         type: "note-todos",
-        isPinned: false,
+        isPinned: true,
         info: {
             label: title,
             todos: [

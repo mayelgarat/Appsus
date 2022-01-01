@@ -38,6 +38,7 @@
 }
 .add-todo-btn:hover {
   background-color: #c9c2c2b7;
+  cursor: not-allowed;
 }
 .todo-note-form input {
   margin-left: 80px;
