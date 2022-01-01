@@ -1,0 +1,37 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(136 123 123);
+  height: 10vh;
+}
+
+.app-header .main-nav a {
+  text-decoration: none;
+  /* color: inherit; */
+  color: white;
+}
+
+.app-header .main-nav a.active {
+  color: white;
+  text-decoration: white underline;
+  transition: text-decoration 0.3s;
+}
+
+.app-header .main-nav a.my-active {
+  color: #ce0000;
+}
+
+.app-header .main-nav > *:not(:last-child) {
+  margin-inline-end: 1rem;
+}
+
+h1.headline {
+    color: rgb(255, 255, 255);
+    margin-inline-start: 34px;
+}
+.main-nav {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-inline-end: 90px;
+}

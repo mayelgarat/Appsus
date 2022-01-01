@@ -1,0 +1,14 @@
+.book-list {
+  display: grid;
+  /* column-gap: 15px; */
+  grid-template-columns: repeat(auto-fill, 290px);
+  /* row-gap: 15px; */
+  justify-content: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+

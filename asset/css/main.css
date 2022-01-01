@@ -1,0 +1,14 @@
+@import url('../../apps/mail/css/main/main.css');
+@import url('../../apps/keep/assets/css/Basic/main.css');
+@import url('../css/helpers.css');
+@import url('../css/cmps/AppHeader.css');
+@import url('../css/cmps/About.css');
+@import url('../css/cmps/Footer.css');
+@import url('./Home.css');
+@import url('../../apps/book/assets/css/Basic/main.css');
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+

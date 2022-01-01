@@ -1,0 +1,29 @@
+.mail-count{
+    list-style: none;
+}
+
+.mail-count li{
+    margin-block-end: 17px;
+}
+
+.mail-count li:active{
+font-weight: bold;
+}
+
+ li .list-btn :active{
+    font-weight: bold;
+
+}
+
+.list-btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.list-btn :active{
+    font-weight: bold;
+    text-decoration: black underline;
+
+}

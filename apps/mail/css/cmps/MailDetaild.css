@@ -1,0 +1,23 @@
+
+
+.mail-subject{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.mail-to{
+    
+    font-weight: bold;
+}
+
+.back-btn{
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+}
+
+.mail-details{
+
+    margin-block-start: 17px;
+}

@@ -1,0 +1,17 @@
+.compose-btn{
+  
+  margin-inline-start: 15px;
+  border-radius: 20px;
+  height: 36px;
+  width: 104px;
+  background-color: white;
+  border: none;
+  box-shadow: 0px 1px 9px 3px #00000094;
+  cursor: pointer;
+  margin-top: 15px;
+
+  }
+
+  .side-bar{
+    margin-inline-start: 15px;
+  }

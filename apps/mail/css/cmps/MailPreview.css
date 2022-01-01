@@ -1,0 +1,160 @@
+.star {
+  color: gold;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.unstar {
+  color: hsl(0, 15%, 85%);
+  cursor: pointer;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.mail-preview {
+  border-bottom: 1px solid rgb(0 0 0 / 33%);
+  color: black;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  color: black;
+  height: 60px;
+  align-items: center;
+}
+
+.unread {
+  font-weight: bold;
+  display: flex;
+}
+
+.read {
+  font-weight: normal;
+  display: flex;
+}
+a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  /* justify-content: space-between; */
+  row-gap: 10px;
+  align-items: center;
+  text-decoration: none;
+}
+.mail-preview:hover {
+  box-shadow: 2px 2px 7px 1px black;
+}
+
+.mail-preview:hover .date {
+  display: none;
+}
+.mail-preview:hover .btn-hover {
+  display: flex;
+  margin-inline-end: 20px;
+}
+
+.mail-preview .btn-hover {
+  display: none;
+}
+
+.read-btn-hover,
+.delete-btn-hover {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.read-btn-hover:hover,
+.delete-btn-hover:hover {
+  transition: font-size 0.2s;
+  font-size: 23px;
+}
+
+
+
+.from,
+.body,
+.subject,
+.date {
+  display: inline;
+  text-decoration: none;
+}
+
+a .from {
+  width: 20%;
+}
+
+a .body {
+  width: 40%;
+}
+
+a .subject {
+  width: 30%;
+}
+
+a .date {
+  width: 10%;
+}
+
+
+@media screen and (max-width : 1000px) {
+
+  .from,
+.body,
+.subject,
+.date {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+.read {
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+.unread {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.mail-preview {
+  /* border-top: 1px solid rgb(0 0 0 / 33%); */
+  border-bottom: 1px solid rgb(0 0 0 / 33%);
+  color: black;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  color: black;
+  height: 150px;
+  align-items: center;
+}
+
+a .from {
+  width: 100%;
+  font-size: 18px;
+}
+
+a .body {
+  width: 100%;
+}
+
+a .subject {
+  width: 100%;
+}
+
+a .date {
+  width: 100%;
+}
+
+}

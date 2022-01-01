@@ -1,0 +1,31 @@
+
+
+.about{
+    text-align: center;
+}
+
+.about-container{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.img-container{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto
+}
+
+.img-container img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+
+.lee, .may{
+    box-shadow: 0 0 20px 0px #0000008c;
+    padding: 20px;
+    border-radius: 10px;
+}

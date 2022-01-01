@@ -1,0 +1,21 @@
+.filter-by-header {
+    border: none;
+    background-color: #ffffff82;
+    height: 23px;
+    width: 70px;
+    margin-inline-end: 50px;
+}
+.header-filter {
+    display: flex;
+    margin-top: 19px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.input-filter-header {
+    border-radius: 10px;
+    margin-inline-end: 10px;
+    border: none;
+    width: 267px;
+    box-shadow: 0px 1px 3px 0px black;
+}

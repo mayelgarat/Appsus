@@ -1,0 +1,35 @@
+.filter-container {
+  text-align: center;
+}
+.filter-container input {
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 1px 2px 0 rgb(60 60 60 / 20%), 0 2px 8px 1px rgb(60 60 60 / 15%);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+.filter-container p {
+  display: inline-block;
+  margin-inline-end: 25px;
+}
+
+.filter-btn {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-family: 'Pontano Sans';
+  font-weight: 500;
+  /* width: 30px;
+  height: 30px; */
+}
+.filter-btn:hover {
+  /* background-color: rgba(221, 146, 146, 0.137); */
+  color: purple;
+  font-weight: 800;
+}

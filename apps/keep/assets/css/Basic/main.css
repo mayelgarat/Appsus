@@ -1,0 +1,42 @@
+@import '../../css/cmps/NotePreview.css';
+@import '../../css/cmps/NoteList.css';
+@import '../../css/cmps/NoteAdd.css';
+@import '../../css/pages/NoteApp.css';
+@import '../../css/cmps/NoteFilter.css';
+@import '../../css/cmps/DynamicNoteCmps.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+
+body {
+  font-family: 'Pontano Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #c895958a;
+}
+
+header {
+  display: flex;
+  background-color: #c89595;
+  width: 100%;
+  height: 100px;
+}
+
+.logo {
+  height: 100%;
+  background-color: transparent;
+}
+
+.header-headline {
+  /* font-family: cursive; */
+  margin: 32px;
+  color: #544b4b;
+  font-size: 24px;
+}
+
+/* label {
+  margin-inline-start: 83px;
+} */
+
+form {
+  margin-top: 20px;
+}
