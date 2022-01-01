@@ -10,6 +10,7 @@ export class NotePreview extends React.Component {
 
     changeNoteColor = (color) => {
         this.props.onChangeBackground(this.props.note.id, utilService.getNiceRandomColor());
+        // this.props.onChangeBackground(this.props.note.id, color);
     };
 
 
