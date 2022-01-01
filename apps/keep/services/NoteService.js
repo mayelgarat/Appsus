@@ -301,6 +301,21 @@ function _createNotes() {
             },
             {
                 id: utilService.makeId(),
+                type: "note-todos",
+                isPinned: true,
+                info: {
+                    label: "dont forget",
+                    todos: [
+                        { id: utilService.makeId(), txt: "pick up puki from the airport", doneAt: null },
+                        { id: utilService.makeId(), txt: "get him a nice gift", doneAt: 187111111 }
+                    ]
+                },
+                style: {
+                    backgroundColor: "#f8f8b8"
+                }
+            },
+            {
+                id: utilService.makeId(),
                 type: "note-img",
                 isPinned: false,
                 info: {
@@ -315,9 +330,53 @@ function _createNotes() {
             {
                 id: utilService.makeId(),
                 type: "note-txt",
+                isPinned: true,
+                info: {
+                    txt: "0502232261"
+                },
+                style: {
+                    backgroundColor: "#d8b5f6"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-txt",
                 isPinned: false,
                 info: {
-                    txt: "Call May"
+                    txt: "remind muki about the cake!!!"
+                },
+                style: {
+                    backgroundColor: "#d8b5f6"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-txt",
+                isPinned: false,
+                info: {
+                    txt: "buy food for the dog"
+                },
+                style: {
+                    backgroundColor: "#d8b5f6"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-txt",
+                isPinned: true,
+                info: {
+                    txt: "Birthday present for mom"
+                },
+                style: {
+                    backgroundColor: "#d8b5f6"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-txt",
+                isPinned: true,
+                info: {
+                    txt: "password: 123456"
                 },
                 style: {
                     backgroundColor: "#d8b5f6"
@@ -385,6 +444,22 @@ function _createNotes() {
                 },
                 style: {
                     backgroundColor: "#f2dce8"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-todos",
+                isPinned: false,
+                info: {
+                    label: "יום ראשון 02/01/2022",
+                    todos: [
+                        { id: utilService.makeId(), txt: "ללכת למכולת", doneAt: null },
+                        { id: utilService.makeId(), txt: "להתקשר למאי", doneAt: null },
+                        { id: utilService.makeId(), txt: "להוציא את הכלב", doneAt: 187111111 }
+                    ]
+                },
+                style: {
+                    backgroundColor: "#f8f8b8"
                 }
             },
             {
