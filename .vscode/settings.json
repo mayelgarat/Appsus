@@ -1,4 +1,12 @@
 {
+<<<<<<< HEAD
   "liveServer.settings.port": 3002,
   "cSpell.words": ["Appsus"]
 }
+=======
+    "liveServer.settings.port": 3002,
+    "cSpell.words": [
+        "Appsus"
+    ]
+}
+>>>>>>> a288ed049e822c5ac2a388ff4c37df75fbd5d41f
