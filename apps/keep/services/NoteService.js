@@ -353,6 +353,18 @@ function _createNotes() {
             },
             {
                 id: utilService.makeId(),
+                type: "note-img",
+                isPinned: true,
+                info: {
+                    url: "https://cdn.xxl.thumbs.canstockphoto.com/woman-with-computer-kissing-the-screen-picture-of-woman-with-laptop-computer-sending-kisses-and-stock-image_csp14680366.jpg",
+                    title: "My New Years Eve"
+                },
+                style: {
+                    backgroundColor: "#f2dce8"
+                }
+            },
+            {
+                id: utilService.makeId(),
                 type: "note-video",
                 isPinned: false,
                 info: {
@@ -361,6 +373,30 @@ function _createNotes() {
                 },
                 style: {
                     backgroundColor: "#a6dcd0"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-img",
+                isPinned: true,
+                info: {
+                    url: "https://pbs.twimg.com/media/EX0EW7rXYAIpYFF.jpg",
+                    title: ""
+                },
+                style: {
+                    backgroundColor: "#f2dce8"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-img",
+                isPinned: false,
+                info: {
+                    url: "https://parade.com/wp-content/uploads/2021/11/new-year-wishes.jpg",
+                    title: "HAPPY NEW YEAR!!! 🎆🎉✨"
+                },
+                style: {
+                    backgroundColor: "#f2dce8"
                 }
             },
             {
@@ -397,6 +433,18 @@ function _createNotes() {
                 info: {
                     url: "https://silentbeacon.com/wp-content/uploads/2020/08/Road-Trip-Safety-Tips-with-car-panic-button.jpg",
                     title: "roadtrip"
+                },
+                style: {
+                    backgroundColor: "#f2dce8"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-img",
+                isPinned: true,
+                info: {
+                    url: "https://pbs.twimg.com/media/EYrqgvrWoAADCdU.jpg",
+                    title: ""
                 },
                 style: {
                     backgroundColor: "#f2dce8"

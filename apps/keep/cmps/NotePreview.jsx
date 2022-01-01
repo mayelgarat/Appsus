@@ -1,5 +1,6 @@
 
 import { DynamicNoteCmps } from './DynamicNoteCmps.jsx'
+import { utilService } from '../../../services/utilService.js';
 // import { NoteColorPalette } from './NoteColorPalette.jsx';
 export class NotePreview extends React.Component {
     removeNote = () => {
@@ -10,7 +11,10 @@ export class NotePreview extends React.Component {
     changeNoteColor = (color) => {
         console.log("changing color");
         console.log("color");
-        this.props.onChangeBackground(this.props.note.id, 'yellow');
+        // let currColor = utilService.getNiceRandomColor()
+        // console.log('currColor:', currColor);
+
+        this.props.onChangeBackground(this.props.note.id, utilService.getNiceRandomColor());
         console.log('this.props.note.id:', this.props.note.id);
     };
 

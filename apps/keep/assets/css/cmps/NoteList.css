@@ -1,6 +1,7 @@
 .note-list {
   columns: auto 270px;
   margin: 15px;
+  margin-bottom: 1rem;
 }
 .note-lists-container {
   margin: 90px;
