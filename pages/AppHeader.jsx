@@ -15,10 +15,7 @@ export class AppHeader extends React.Component {
         <button
           className="burger"
           onClick={() => {
-            this.setState(
-              { isClick: !isClick },
-              console.log(this.state.isClicked)
-            );
+            this.setState({ isClick: !isClick });
           }}
         >
           <i className="fas fa-bars"></i>
@@ -28,23 +25,46 @@ export class AppHeader extends React.Component {
           <div className="main-nav">
             <div>
               <NavLink exact to="/">
-                <button><i className="fas fa-home"></i></button>
+                <button
+                  onClick={() => {
+                    this.setState({ isClick: !isClick });
+                  }}
+                >
+                  <i className="fas fa-home"></i>
+                </button>
               </NavLink>
             </div>
             <div>
               <NavLink to="/about">
-                {" "}
-                <button><i className="fas fa-address-card"></i></button>
+                <button
+                  onClick={() => {
+                    this.setState({ isClick: !isClick });
+                  }}
+                >
+                  <i className="fas fa-address-card"></i>
+                </button>
               </NavLink>
             </div>
             <div>
               <NavLink to="/mail">
-                <button><i className="fas fa-at"></i></button>
+                <button
+                  onClick={() => {
+                    this.setState({ isClick: !isClick });
+                  }}
+                >
+                  <i className="fas fa-at"></i>
+                </button>
               </NavLink>
             </div>
             <div>
               <NavLink to="/note">
-                <button><i className="far fa-sticky-note"></i></button>
+                <button
+                  onClick={() => {
+                    this.setState({ isClick: !isClick });
+                  }}
+                >
+                  <i className="far fa-sticky-note"></i>
+                </button>
               </NavLink>
             </div>
           </div>
