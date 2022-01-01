@@ -147,7 +147,7 @@ function createTextNote(txt) {
     const newTxtNote = {
         id: utilService.makeId(),
         type: "note-txt",
-        isPinned: false,
+        isPinned: true,
         info: {
             txt
         }, style: {
@@ -162,7 +162,7 @@ function createTodoNote(title, todos) {
     const newTodoNote = {
         id: utilService.makeId(),
         type: "note-txt",
-        isPinned: false,
+        isPinned: true,
         info: {
             txt
         }, style: {
@@ -175,7 +175,7 @@ function createImgNote(imgUrl, title) {
     const newImgNote = {
         id: utilService.makeId(),
         type: "note-img",
-        isPinned: false,
+        isPinned: true,
         info: {
             url: imgUrl,
             title,
@@ -191,7 +191,7 @@ function createVideoNote(videoUrl, title) {
     const newVideoNote = {
         id: utilService.makeId(),
         type: "note-video",
-        isPinned: false,
+        isPinned: true,
         info: {
             url: videoUrl,
             title
@@ -282,6 +282,18 @@ function _createNotes() {
             },
             {
                 id: utilService.makeId(),
+                type: "note-video",
+                isPinned: true,
+                info: {
+                    url: "https://www.youtube.com/watch?v=Xmk4tNkztGY",
+                    title: "🌴"
+                },
+                style: {
+                    backgroundColor: "#a6dcd0"
+                }
+            },
+            {
+                id: utilService.makeId(),
                 type: "note-txt",
                 isPinned: false,
                 info: {
@@ -289,17 +301,6 @@ function _createNotes() {
                 },
                 style: {
                     backgroundColor: "#d8b5f6"
-                }
-            }, {
-                id: utilService.makeId(),
-                type: "note-video",
-                isPinned: false,
-                info: {
-                    url: "https://www.youtube.com/watch?v=ZuRLOlB4N8U&ab_channel=PetWard",
-                    title: "Watch later"
-                },
-                style: {
-                    backgroundColor: "#a6dcd0"
                 }
             },
             {
@@ -329,18 +330,7 @@ function _createNotes() {
                     backgroundColor: "#f2dce8"
                 }
             },
-            {
-                id: utilService.makeId(),
-                type: "note-video",
-                isPinned: false,
-                info: {
-                    url: "https://www.youtube.com/watch?v=0xqkksHov58&ab_channel=PetWard",
-                    title: "Watch later"
-                },
-                style: {
-                    backgroundColor: "#a6dcd0"
-                }
-            },
+
 
             {
                 id: utilService.makeId(),
@@ -369,13 +359,14 @@ function _createNotes() {
                 type: "note-video",
                 isPinned: true,
                 info: {
-                    url: "https://www.youtube.com/watch?v=Ob7vObnFUJc&ab_channel=Beyonc%C3%A9VEVO",
-                    title: "🎵🎶🎵"
+                    url: "https://www.youtube.com/watch?v=t_Ng2rj7bl0",
+                    title: "🎵🎶🎵Jasmin Moallem 🌵 Succulent Sessions"
                 },
                 style: {
                     backgroundColor: "#a6dcd0"
                 }
             },
+
             {
                 id: utilService.makeId(),
                 type: "note-txt",
@@ -398,18 +389,7 @@ function _createNotes() {
                     backgroundColor: "#d8b5f6"
                 }
             },
-            {
-                id: utilService.makeId(),
-                type: "note-video",
-                isPinned: true,
-                info: {
-                    url: "https://www.youtube.com/watch?v=VCjSIex9JEQ&ab_channel=PetWard",
-                    title: "Watch later"
-                },
-                style: {
-                    backgroundColor: "#a6dcd0"
-                }
-            },
+
             {
                 id: utilService.makeId(),
                 type: "note-todos",
@@ -427,18 +407,7 @@ function _createNotes() {
                     backgroundColor: "#f8f8b8"
                 }
             },
-            {
-                id: utilService.makeId(),
-                type: "note-video",
-                isPinned: false,
-                info: {
-                    url: "https://www.youtube.com/watch?v=q3uXXh1sHcI&ab_channel=BBCEarth",
-                    title: "cute penguins"
-                },
-                style: {
-                    backgroundColor: "#a6dcd0"
-                }
-            },
+
             {
                 id: utilService.makeId(),
                 type: "note-txt",
@@ -615,8 +584,8 @@ function _createNotes() {
                 type: "note-video",
                 isPinned: false,
                 info: {
-                    url: "https://www.youtube.com/watch?v=t_Ng2rj7bl0&ab_channel=SucculentSessions",
-                    title: "Jasmin Moallem 🌵 Succulent Sessions"
+                    url: "https://www.youtube.com/watch?v=yfYjEkaN-1s",
+                    title: "🌵🌴🍍"
                 },
                 style: {
                     backgroundColor: "#a6dcd0"
@@ -635,6 +604,18 @@ function _createNotes() {
                 },
                 style: {
                     backgroundColor: "#f8f8b8"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-video",
+                isPinned: false,
+                info: {
+                    url: "https://www.youtube.com/watch?v=tfBVp0Zi2iE",
+                    title: "watch later"
+                },
+                style: {
+                    backgroundColor: "#a6dcd0"
                 }
             },
             {
@@ -668,6 +649,18 @@ function _createNotes() {
                 },
                 style: {
                     backgroundColor: "#f8f8b8"
+                }
+            },
+            {
+                id: utilService.makeId(),
+                type: "note-video",
+                isPinned: true,
+                info: {
+                    url: "https://www.youtube.com/watch?v=uZi8fw1MW9w",
+                    title: "watch later"
+                },
+                style: {
+                    backgroundColor: "#a6dcd0"
                 }
             },
         ];

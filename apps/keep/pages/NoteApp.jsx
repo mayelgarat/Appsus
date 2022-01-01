@@ -177,12 +177,14 @@ export class NoteApp extends React.Component {
                                 />
                             </div>
                         </div>
+
                         <div className="create-notes-btns">
                             Choose Note Type:
                             <button className="create-note-btn" onClick={this.onShowAddTxtNoteModal}>Create text Note</button>
                             <button className="create-note-btn" onClick={this.onShowAddImgNoteModal}>Create image Note</button>
                             <button className="create-note-btn" onClick={this.onShowAddVideoNoteModal}>Create video Note</button>
                             <button className="create-note-btn" onClick={this.onShowAddTodoNoteModal}>Create todo Note</button>
+
                         </div>
                         {this.state.addTxtNoteModal && <div className="add-notes-container">
                             <div className="note-modal">
